@@ -20,8 +20,6 @@ AND last_name like '%e'
 ORDER BY emp_no DESC;
 
 SELECT
-datediff(curdate()),
-
 first_name, last_name
 FROM employees
 WHERE (hire_date BETWEEN '1990-01-01' AND '1999-12-31')
