@@ -1,11 +1,12 @@
 use employees;
 
-SELECT *
+SELECT first_name, last_name, gender
 FROM employees
 WHERE (first_name = 'Vidya'
 OR first_name = 'Irena'
 OR first_name = 'Maya')
-AND gender = 'M';
+AND gender = 'M'
+ORDER BY last_name ASC, first_name ASC;
 
 SELECT *
 FROM employees
